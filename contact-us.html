@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Name: Sidney Raabe
+    Date Created: 7/18/2020
+    Most Recent Revision: 7/18/2020
+-->
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <h1>The Rusty Grill</h1>
+    </header>
+
+    <nav>
+        <hr />
+        <p><a href=index.html>Home</a> <a href=menu.html>Menu</a> <a href=contact-us.html>Contact Us</a></p>
+        <hr />
+    </nav>
+
+    <section>
+        <article id="information-request">
+            <form action="submit.html" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br><!--<br><br> as opposed to single <br> to add space from other boxes... did this throughout; better handled by CSS?-->
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone"><br><br>
+
+                <label for="inquiryReason">Reason for Inquiry:</label>
+                <select id="inquiryReason" name="inquiryReason">
+                    <option value="default" selected>Catering</option>
+                    <option value="privateParty">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label for="info">Additional Information:</label>
+                <textarea id="info" name="info"></textarea><br><br>
+
+                <label for="questionnaire">Have you been to the restaurant?</label><br />
+                <input type="radio" id="choice1" name="questionnaire" value="yes">
+                <label for="choice1">Yes</label><br />
+                <input type="radio" id="choice2" name="questionnaire" value="no">
+                <label for="choice2">No</label><br /><br>
+
+                <label for="contactDay">Best days to contact you:</label>
+                <input type="checkbox" id="monday" name="contactDay" value="monday">
+                <label for="monday">M</label>
+                <input type="checkbox" id="tuesday" name="contactDay" value="tuesday">
+                <label for="tuesday">T</label>
+                <input type="checkbox" id="wednesday" name="contactDay" value="wednesday">
+                <label for="wednesday">W</label>
+                <input type="checkbox" id="thursday" name="contactDay" value="thursday">
+                <label for="thursday">Th</label>
+                <input type="checkbox" id="friday" name="contactDay" value="friday">
+                <label for="friday">F</label><br><br>
+
+                <input type="submit" name="submit" value="Send Request">
+            </form>
+    </section>
+
+    </footer>
+        <hr />
+        <p>9562 Linda St. Fairborn, OH 45324<br />
+        p. (202)-555-0199</p>
+    </footer>
+</body>
+
+</html>
